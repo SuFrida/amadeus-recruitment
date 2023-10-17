@@ -6,7 +6,12 @@
     /* TODO: set COLORS PALLETTE */
     --white: #ffffff;
     --color-primary:#3C7FF8;
+    --color-title: #2B5DB6;
     --color-light:#AEC4E5;
+    --color-dark: #222038;
+    --color-red: #FF5252;
+    --color-red-light: #F59D9D;
+    --color-aqua: #63DAE1;
     --fuentePrincipal:'Poppins', sans-serif;
     --bs-modal-width: 1000px !important;
   }
@@ -88,4 +93,18 @@ h6{
   text-align: center;
 }
 
+/* Tag Background Colors */
+.blue-bg {
+  background-color: var(--color-title) !important;
+  color: #fff;
+}
 
+.red-bg {
+  background-color: var(--color-red-light) !important;
+  color: #fff;
+}
+
+.teal-bg {
+  background-color: var(--color-aqua) !important;
+  color: #fff;
+}

@@ -164,7 +164,7 @@ const ConsMenuConfig = [
         permissionName: 'evaluation.session.show'
       },
       { 
-        label: 'Estadistcas',
+        label: 'Estadísticas',
         routeName: 'evaluation.statistic.show',
         permissionName: 'evaluation.statistic.show'
       },

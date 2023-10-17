@@ -251,7 +251,7 @@ const submit = () => {
 
                             <div class="mt-3">
                                 <InputLabel for="school_phone" value="Teléfono *" />
-
+                                <!-- required -->
                                 <TextInput
                                     id="school_phone"
                                     type="tel"

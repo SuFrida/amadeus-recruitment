@@ -73,14 +73,21 @@ const notifications = [
                 <Dropdown align="right" width="100">
                     <template #trigger>
                         <span class="inline-flex nav-user">
+                            
                             <button
                                 type="button"
-                                class="text-light inline-flex items-center leading-4 hover:text-gray-700 focus:outline-none"
+                                class="text-light inline-flex items-center leading-4 hover:text-gray-700 focus:outline-none text-base"
                             >
                                 <!-- Icono del usuario -->
-                                <i class="fa-light fa-circle-user icon-size me-2"></i>
+                                <!-- <i class="fa-light fa-circle-user icon-size me-2"></i> -->
+                                <span class="profile-icon mr-2">
+                                    <!-- Iniciales del usuario -->
+                                    <div class="profile-initials">
+                                        {{ $page.props.auth.user.name.charAt(0).toUpperCase() }}{{ $page.props.auth.user.surname.charAt(0).toUpperCase()  }}
+                                    </div>
+                                </span>
                                 <!-- Nombre del usuario -->
-                                {{ $page.props.auth.user.name }}
+                                {{ $page.props.auth.user.name }} {{ $page.props.auth.user.surname }}
                                 
                                 <!-- Icono de flecha hacia abajo -->
                                 <svg
@@ -182,5 +189,21 @@ const notifications = [
     left: 0;
     z-index: 1100;
     height: 5rem;
+}
+
+.profile-icon {
+    border-radius: 100%;
+    background-color: var(--color-aqua);
+    font-weight: 600;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    > .profile-initials {
+        color: #0D2B42;
+        font-size: 14px;
+       
+    }
 }
 </style>
